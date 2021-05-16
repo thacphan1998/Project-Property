@@ -218,22 +218,14 @@ ul.sub-menu-03 {
 /* banner-top */
 
 .banner-top-slide {
-    /* width: 1920px; */
     max-width: 100%;
     margin: 0 auto;
-    /* position: absolute; */
     display: block;
-    background-color: #1866AB;
+    background-color: #055699;
     width: 100%;
     height: 376.292px;
     cursor: pointer;
 }
-
-
-/* .banner-center div {
-    margin: 0;
-    padding: 0;
-} */
 
 .banner-center {
     position: relative;
@@ -1677,6 +1669,11 @@ i.fas.fa-chevron-down {
 }
 
 @media screen and (max-width: 1301px) {
+    /* display:none */
+    .banner-top-slide {
+        display: none;
+    }
+    /* --- */
     body {
         display: grid;
     }
@@ -1690,7 +1687,7 @@ i.fas.fa-chevron-down {
         display: inline-block;
     }
     header.res-header {
-        background-color: #004e7f;
+        background-color: #055699;
         width: 100%;
         height: auto;
         border: none;
@@ -1698,6 +1695,7 @@ i.fas.fa-chevron-down {
     }
     .res-header .res-menu {
         display: block !important;
+        height: 105px;
     }
     .naga {
         height: 60px;
@@ -1707,9 +1705,10 @@ i.fas.fa-chevron-down {
         text-align: center;
     }
     .res-logo img {
-        max-height: 45px;
-        height: 45px;
+        max-height: 40px;
+        height: 40px;
         margin-top: 7px;
+        margin-bottom: -11px;
     }
     .icon-toggler {
         display: inline-block !important;
@@ -1762,6 +1761,54 @@ i.fas.fa-chevron-down {
     }
     .home-center {
         width: 100%;
+    }
+    /* search responsive */
+    .res-top-search {
+        background: none;
+        width: 100%;
+        padding-bottom: 8px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .res-home-search {
+        padding: 0 16px;
+    }
+    .search-input-wrap {
+        position: relative;
+    }
+    .search-wrap-btn {
+        top: -4px;
+        background: none;
+        height: 42px;
+        width: 42px;
+        line-height: 48px;
+        text-align: center;
+        border-radius: 0 3px 3px 0;
+        display: inline-block;
+        padding-top: 0;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0px;
+    }
+    .search-text {
+        flex: 1;
+        box-sizing: border-box;
+        height: 40px;
+        line-height: 20px;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 42px;
+        padding-right: 40px;
+        color: #2c2f36;
+        font-size: 14px;
+        font-weight: 600;
+        background: #fff;
+        border-radius: 3px;
     }
 }
 
