@@ -1285,6 +1285,10 @@ i.fas.fa-chevron-down {
     display: block;
 }
 
+.home-small-main-02 .list-news ul li a:hover {
+    color: #055699;
+}
+
 
 /* home-center */
 
@@ -1787,6 +1791,11 @@ i.fas.fa-chevron-down {
     float: left;
     max-height: 178px;
     display: block;
+}
+
+.home-product-place .place-info a:hover .place-name,
+.home-product-place .place-info a:hover .place-number {
+    text-decoration: underline;
 }
 
 
@@ -2323,6 +2332,9 @@ i.fas.fa-chevron-down {
         font-weight: bold;
         word-wrap: break-word;
     }
+    .list-title a:hover {
+        color: #055699;
+    }
     .list-title span {
         font-size: 12px;
         line-height: 24px;
@@ -2443,6 +2455,10 @@ i.fas.fa-chevron-down {
     }
     .res-home-product-place .res-place-img {
         position: relative;
+    }
+    .res-home-product-place .res-place-info a:hover .res-place-name,
+    .res-home-product-place .res-place-info a:hover .res-place-number {
+        text-decoration: underline;
     }
 }
 
