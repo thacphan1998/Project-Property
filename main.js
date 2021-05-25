@@ -308,3 +308,51 @@ jQuery.fn.extend({
 });
 
 $('.search-home').setMenu();
+
+$(window).scroll(function() {
+    var sticky = $('header.menu'),
+        scroll = $(window).scrollTop();
+
+    if (scroll >= 100) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+});
+
+
+const wWidth = $(window).width();
+if (wWidth <= 1301) {
+    console.log("====== window width", wWidth)
+
+} else {
+    console.log("====== not window width", wWidth)
+}
+
+$(document).ready(function() {
+    const owl = $('.owl-carousel');
+    owl.owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1302: {
+                items: 4
+            }
+        }
+    });
+    // Go to the next item
+    $('.customNextBtn').click(function() {
+            owl.trigger('next.owl.carousel');
+        })
+        // Go to the previous item
+    $('.customPrevBtn').click(function() {
+        // With optional speed parameter
+        // Parameters has to be in square bracket '[]'
+        owl.trigger('prev.owl.carousel', [300]);
+    })
+
+});
