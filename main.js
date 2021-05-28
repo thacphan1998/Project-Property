@@ -337,7 +337,7 @@ $(document).ready(function() {
                 items: 1
             },
             600: {
-                items: 2
+                items: 2,
             },
             1302: {
                 items: 4
@@ -355,4 +355,11 @@ $(document).ready(function() {
         owl.trigger('prev.owl.carousel', [300]);
     })
 
+
+    if ($(window).width() < 1302) {
+        const screenWidth = $(window).width() - 16;
+        console.log("🚀 ~ file: main.js ~ line 360 ~ $ ~ screenWidth", screenWidth)
+        const widthPerItem = screenWidth * 3 / 4;
+        $('.owl-item').width(widthPerItem);
+    }
 });
